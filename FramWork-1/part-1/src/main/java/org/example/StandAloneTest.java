@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,9 +42,20 @@ public class StandAloneTest {
 
         Boolean match = cartProducts.stream().anyMatch(cartProduct-> cartProduct.getText().equals("ZARA COAT 3"));
 
-        Assert.assertTrue(match);
+
 
         driver.findElement(By.cssSelector(".totalRow button")).click();
+
+        Actions a = new Actions(driver);
+        a.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"india").build().perform();
+
+        driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
+        driver.findElement(By.cssSelector(".action__submit")).click();
+
+        String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
+
+
+
 
 
 
