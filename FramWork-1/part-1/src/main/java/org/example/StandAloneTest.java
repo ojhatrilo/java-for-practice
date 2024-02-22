@@ -1,6 +1,6 @@
 package org.example;
 
-import dev.failsafe.internal.util.Assert;
+//import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -53,6 +54,14 @@ public class StandAloneTest {
         driver.findElement(By.cssSelector(".action__submit")).click();
 
         String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
+
+
+
+
+
+
+
+
 
 
 
