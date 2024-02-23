@@ -13,7 +13,7 @@ public class Action {
         driver.manage().window().maximize();
 
         Actions a = new Actions(driver);
-        a.moveToElement(driver.findElement(By.cssSelector(".gLFyf"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().contextClick().build().perform();
+        a.moveToElement(driver.findElement(By.cssSelector(".gLFyf"))).click().keyDown(Keys.SHIFT).sendKeys("java.org").doubleClick().contextClick().build().perform();
 
     }
 }
