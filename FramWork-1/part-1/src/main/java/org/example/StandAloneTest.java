@@ -19,6 +19,7 @@ public class StandAloneTest {
 
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/client");
 
         driver.findElement(By.id("userEmail")).sendKeys("livewire@gmail.com");
