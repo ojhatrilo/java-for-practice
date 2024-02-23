@@ -23,16 +23,17 @@ public class StandAloneApplication {
         List<WebElement>products =productCatalogue.getProductList();
         productCatalogue.addProductToCart(productName);
         productCatalogue.goToCartPage();
+
         CartPage cartPage = new CartPage(driver);
         Boolean match = cartPage.VerifyProductDisplay(productName);
         Assert.assertTrue(match);
-        cartPage.goToCheckout();
+       
         CheckoutPage checkoutPage = cartPage.goToCheckout();
         checkoutPage.selectCountry("india");
         ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 
-        String confirmaMessage = confirmationPage.getConfirmationMessage();
-        Assert.assertTrue(confirmaMessage.equalsIgnoreCase("THANKYOU FOR THE ODER"));
+        String confirmMessage = confirmationPage.getConfirmationMessage();
+        Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ODER."));
         driver.close();
 
 
