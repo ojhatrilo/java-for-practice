@@ -18,11 +18,12 @@ public class Main {
         driver.findElement(By.id("inputUsername")).sendKeys("rahul");// sending values to the url
         driver.findElement(By.name("inputPassword")).sendKeys("hello@123");//sennding values to the url
         driver.findElement(By.className("signInBtn")).click();// Click action is performed
+//        Thread.sleep(1000);
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());//getting the error of the text
         driver.findElement(By.linkText("Forgot your password?")).click();
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("john");
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("John");
-        Thread. sleep(1000);
+//        Thread. sleep(1000);
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john@rsa.com");
 
         driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
@@ -36,7 +37,7 @@ public class Main {
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
 
         driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
-
+//
         Thread. sleep(1000);
 
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");

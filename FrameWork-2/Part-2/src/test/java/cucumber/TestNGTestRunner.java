@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/java/cucumber",glue="rahulshettyacademy.stepDefinitions",
 monochrome=true, tags = "@Regression", plugin= {"html:target/cucumber.html"})
-public class TestNGTestRunner extends AbstractTestNGCucumberTests{
+public class TestNGTestRunner extends  AbstractTestNGCucumberTests{
 
 	
 }

@@ -13,7 +13,7 @@ public class locators2 {
 
         String name = "rahul";
 
-        System.setProperty("webdriver.chrome.driver","D:\\Staff\\Ojha file\\testing\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver","D:\\Staff\\Ojha file\\testing\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
