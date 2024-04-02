@@ -31,7 +31,7 @@ public class Filtertest {
                 collect(Collectors.toList());
 
         //1 result
-
+//        System.out.println(veggies.size());
         Assert.assertEquals(veggies.size(), filteredList.size());
 
 
