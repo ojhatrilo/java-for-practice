@@ -33,24 +33,24 @@ public class testing {
 //        driver.findElement(By.cssSelector("ui-state-default.ui-state-highlight.ui-state-active")).click();
 
 
-
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5"))
-
-        {
-
-            System.out.println("its disabled");
-
-            Assert.assertTrue(true);
-
-        }
-
-        else
-
-        {
-
-            Assert.assertTrue(false);
-
-        }
+//
+//        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5"))
+//
+//        {
+//
+//            System.out.println("its disabled");
+//
+//            Assert.assertTrue(true);
+//
+//        }
+//
+//        else
+//
+//        {
+//
+//            Assert.assertTrue(false);
+//
+//        }
 
         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
 

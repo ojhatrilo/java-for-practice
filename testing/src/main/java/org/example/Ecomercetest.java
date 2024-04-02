@@ -45,6 +45,8 @@ public class Ecomercetest {
 
 
 
+
+
             driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 
             Thread.sleep(3000);
@@ -104,8 +106,6 @@ public class Ecomercetest {
             }
 
         }
-
-
 
     }
 
