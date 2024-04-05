@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,6 +34,10 @@ public class Filtertest {
         //1 result
 //        System.out.println(veggies.size());
         Assert.assertEquals(veggies.size(), filteredList.size());
+
+//        List<String> list = Arrays.asList("Alex", "Brian", "Charles");
+//
+//        list.forEach(System.out::println);
 
 
 

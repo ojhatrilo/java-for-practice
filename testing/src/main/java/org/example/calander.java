@@ -37,6 +37,8 @@ public class calander {
 
         driver.findElements(By.cssSelector(".react-calendar__year-view__months__month")).get(Integer.parseInt(monthNumber)-1).click();
 
+//        System.out.println( driver.findElements(By.cssSelector(".react-calendar__year-view__months__month")).get(Integer.parseInt(monthNumber)-1)); ;
+
         driver.findElement(By.xpath("//abbr[text()='"+date+"']")).click();
 
         List<WebElement> actualList = driver.findElements(By.cssSelector(".react-date-picker__inputGroup__input"));
