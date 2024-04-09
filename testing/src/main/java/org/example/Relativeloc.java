@@ -10,15 +10,7 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 public class Relativeloc {
     public static void main(String[] args) {
 
-
-
 // TODO Auto-generated method stub
-
-
-
-
-
-
 
         WebDriver driver=new ChromeDriver();
 
@@ -49,19 +41,6 @@ public class Relativeloc {
 
 
         System.out.println(driver.findElement(with(By.tagName("label")).toRightOf(rdb)).getText());
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

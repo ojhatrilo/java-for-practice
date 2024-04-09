@@ -42,6 +42,7 @@ public class calander {
         driver.findElement(By.xpath("//abbr[text()='"+date+"']")).click();
 
         List<WebElement> actualList = driver.findElements(By.cssSelector(".react-date-picker__inputGroup__input"));
+        System.out.println(actualList.size());
 
         for(int i =0; i<actualList.size();i++)
 

@@ -40,6 +40,8 @@ public class Softassertion {
 
 
         List<WebElement> links=   driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+        System.out.println(links.size());
+
 
         SoftAssert a =new SoftAssert();
 
@@ -54,8 +56,7 @@ public class Softassertion {
             String url= link.getAttribute("href");
 
 
-
-            HttpURLConnection conn= (HttpURLConnection)new URL(url).openConnection();
+            HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
 
             conn.setRequestMethod("HEAD");
 
@@ -65,19 +66,19 @@ public class Softassertion {
 
             System.out.println(respCode);
 
-            a.assertTrue(respCode<400, "The link with Text"+link.getText()+" is broken with code" +respCode);
+            a.assertTrue(respCode<400, "The link with Text"+" "+link.getText()+" "+" is broken with code" +respCode);
 
         }
         a.assertAll();
     }
 
-    private static Object getReturnCode(WebElement link) {
-
-// TODO Auto-generated method stub
-
-        return null;
-
-    }
+//    private static Object getReturnCode(WebElement link) {
+//
+//// TODO Auto-generated method stub
+//
+//        return null;
+//
+//    }
 
 
 
