@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name= "Automatio Test">
-    <test name="Smoke Testcases">
-    <packages>
-       <package name="testngFiles" />
-        <package name="packTwo"/>
-       
-       
-    </packages>
-    
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/Staff/Ojha file/java-for-practice/TestNG_Tutorial/src/main/java/packTwo/Annotations.java">
+        <classes>
+            <class name="packTwo.Annotations">
+                <methods>
+                    <include name="OpeningBrowser"/>
+                </methods>
+            </class>
+
+        </classes>
     </test>
-    
 </suite>
